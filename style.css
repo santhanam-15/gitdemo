@@ -5,3 +5,5 @@ input { flex: 1; padding: 8px; }
 button { padding: 8px 14px; cursor: pointer; }
 li { padding: 8px; border-bottom: 1px solid #ddd; }
 #version { color: gray; font-size: 12px; }
+li { cursor: pointer; }
+li:hover { background: #ffecec; text-decoration: line-through; }
