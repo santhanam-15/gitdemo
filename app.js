@@ -11,3 +11,12 @@ function render() {
 }
 
 render();
+document.getElementById("addBtn").addEventListener("click", () => {
+  const input = document.getElementById("taskInput");
+  const text = input.value.trim();
+  if (text !== "") {
+    tasks.push(text);
+    input.value = "";
+    render();
+  }
+});
