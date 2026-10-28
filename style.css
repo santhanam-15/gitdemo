@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; }
+h1 { color: #333; }
+.input-row { display: flex; gap: 8px; }
+input { flex: 1; padding: 8px; }
+button { padding: 8px 14px; cursor: pointer; }
+li { padding: 8px; border-bottom: 1px solid #ddd; }
+#version { color: gray; font-size: 12px; }
