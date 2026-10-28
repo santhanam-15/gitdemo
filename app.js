@@ -6,6 +6,11 @@ function render() {
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
     li.textContent = task;
+    li.title = "Click to delete";               // NEW
+    li.addEventListener("click", () => {         // NEW
+      tasks.splice(index, 1);                    // NEW
+      render();                                  // NEW
+    });                                          
     list.appendChild(li);
   });
 }
